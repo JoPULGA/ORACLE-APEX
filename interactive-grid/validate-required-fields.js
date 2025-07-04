@@ -5,7 +5,9 @@ let hasError = false; // Flag to control page submission
 function validateGrid(regionId, fields) {
   const widget = apex.region(regionId).widget();
   const grid = widget.interactiveGrid('getViews', 'grid');
-  const model = grid.model; // Iterate over all rows in the model
+  const model = grid.model; // Iterate over all rows in the model 
+  // If you dealing with empty grid make sure that you have enabled "Add Row If Empty" attribute otherwise you can also check total recrods with model.getTotalRecords();
+
   // To validate only selected rows, you could use:
   // const model = grid.view$.grid("getSelectedRecords");
 

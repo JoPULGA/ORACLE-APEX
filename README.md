@@ -1,4 +1,3 @@
-# ORACLE-APEX
 # Oracle APEX Solutions
 
 This repository contains reusable Oracle APEX  JavaScript solutions
